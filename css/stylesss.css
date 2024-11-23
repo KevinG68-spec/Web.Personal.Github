@@ -1,0 +1,164 @@
+:root {
+    --beige: #FCF5ED;
+    --black: #0c0a0a;
+    --morado: #3A1078;
+    --azul: #2F58CD;
+    --turquesa: #3795BD;
+    --morado-bajo: #4E31AA;
+    --white: #ffff;
+    --peach: #FF9B85; /* Añadido para el borde de botones */
+}
+
+body {
+    font-size: 62.5%;
+    background-color: var(--black);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--azul);
+    width: 100%;
+    padding: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+fieldset {
+    max-width: 70rem;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--azul);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--white);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.input-text {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--black);
+    color: var(--white);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-text:focus {
+    border-color: var(--turquesa);
+    background-color: var(--black);
+}
+
+.boton-margin {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.boton {
+    background-color: var(--morado);
+    color: var(--beige);
+    font-size: 1.4rem;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover {
+    background-color: var(--black);
+    color: var(--turquesa);
+    border: 1.5px solid var(--peach);
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--morado-bajo);
+    padding: 3rem 0 4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.table-dark {
+    background-color: var(--morado-bajo) !important;
+    color: var(--beige) !important;
+}
+
+.table-dark th,
+.table-dark td {
+    border-color: var(--turquesa) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(55, 149, 189, 0.3);
+}
+
+.table-striped tbody tr:hover {
+    background-color: var(--morado) !important;
+    color: var(--beige) !important;
+}
+
+h1 {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+}

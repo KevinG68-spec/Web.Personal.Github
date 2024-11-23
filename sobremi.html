@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --black: #000000;
+            --blue: #2F58CD;
+            --dark_blue: #16295c;
+            --naran: #C84B31;
+            --Beige: #ECDBBA;
+
+            --purple: #3A1078;
+            --dark_purple: #210a45;
+            --purple_ligth: #4E31AA;
+            --white: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), 
+                    url('img/Fondo2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--white);
+            
+        }
+
+        .titulo {
+            background-color: black; /* Color de fondo negro */
+            color: white;            /* Texto blanco */
+            text-align: center;      /* Centrar el texto */
+            padding: 10px 0;         /* Espaciado interno (superior e inferior) */
+            width: 100%;             /* Asegurarse de que cubra todo el ancho */
+            position: relative;      /* Mantenerlo dentro del flujo normal */
+            z-index: 1;              /* Asegurar que esté encima de otros elementos */
+        }
+
+
+        header{
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: var(--dark_blue);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            background-color: var(--dark_purple);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 15px 0px 20px rgba(189, 173, 173, 0.2);
+            text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+
+        .sidebar p {
+            margin: 10px 0;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .main-content section {
+            margin-bottom: 20px;
+        }
+
+        .main-content h2 {
+            border-bottom: 2px solid var(--naran);
+            padding-bottom: 5px;
+            color: var(--Beige);
+            text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .list-item {
+            margin: 10px 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        h1:hover{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><header>
+        <h1 class="titulo">Kevin Daniel Gallegos Carrillo <span style="color: rgb(227, 24, 24);"> Portafolio</span></h1>
+     </header></a>
+
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <img src="img/Foto1.webp" alt="Foto de perfil">
+            <h1>Kevin Gallegos</h1>
+            <p>Ing. en Computación </p>
+            <hr>
+            <h2>Contacto</h2>
+            <p>Teléfono: +123-456-789</p>
+            <p>Email: kevinlaboral118@gmail.com</p>
+            <p>Dirección: 123 CUCEI.</p>
+            <hr>
+            <h2>Idioma</h2>
+            <p>Inglés A1, Español</p>
+            <hr>
+            <h2>Experiencia</h2>
+            <ul>
+                <li class="list-item">Mantenimiento de PC.</li>
+                <li class="list-item">Diseñador Grafico.</li>
+                <li class="list-item">Tecnico en Electronica.</li>
+            </ul>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>Diseñador de personajes para trabajos de animación y Videojuegos.</p>
+                <br>
+                <p>Dominio de lenguaje C++, Python, VHDL y Note++.</p>
+                <br>
+                <p>Conocimiento en Configuración de equipos para la administración de redes de computadoras y sistemas operativos.</p>
+                <br>
+                <p>Mantenimiento y montaje de equipos de computo e impresoras.</p>
+                <br>
+                <p>Estudio de manera independiente animación, Diseño grafico e instalaciones electricas de baja y alta tensión.</p>
+            </section>
+            <section id="experience">
+                <h2>Experiencia</h2>
+                <p><strong>Agua purificada lo Ideal</strong> (2019-Actualmente)</p>
+                <p>- Encagado de el Mantenimiento del equipo de computo de la empresa y administración de la agenda de esta misma.</p>
+                <p><strong>Venta Naturista Ganesh</strong> (2021-2024)</p>
+                <p>- Diseñador de logo y publicidad de Marketing de la empresa.</p>
+                <p><strong>Electronica Amistad</strong> (2015-2019)</p>
+                <p>- Ayudante de taller tecnico del local.</p>
+                <p>- Diseñador de diagramas de circuitos de sistemas digitales</p>
+                <p>- Vendedor de productos de la empresa.</p>
+            </section>
+            <section id="education">
+                <h2>Educación</h2>
+                <p><strong>Centro Universitario de Ciencas Exactas e Ingenerias CUCEI</strong> -Ingeneria en Coputación(2014-2018)</p>
+                <p><strong>Certificaciones:</strong> Tecnico en Electronica, Licenciatura Tecnica de Matematicas.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

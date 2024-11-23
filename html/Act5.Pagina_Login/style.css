@@ -1,0 +1,175 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #3A1078;
+}
+
+.form-container{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden; /* si al elementos que chocan con el borde radius ase que este se conserve*/
+
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+}
+
+.form-container .login-container{
+    width: 500px;
+    margin:  0 auto;
+
+}
+.form-container .login-container > h2{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.form-container .login-container > p,
+.form-container .form-container > span{
+    text-align:  center;
+    color: #555;
+}
+
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding:  5px 0;
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+
+}
+
+.form-container .login-container input.input:focus{
+    outline: solid 2px #09f ;
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container a {
+    color: #09f;
+    text-decoration: none;
+}
+
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+.form-container .login-container .provides{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30 px;
+
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius:  5px;
+    text-transform: uppercase; /* Todo en mayusculas*/
+    cursor: pointer;
+
+}
+
+/*Asegura que solo afecta los que solo tengan los variables btn */
+.btn.btn-login{
+    background-color: #3795BD;
+    color: white;
+
+}
+
+.btn.btn.btn-login:hover{
+    background-color: #4444;
+}
+
+.btn.btn-facebook{
+    background-color: rgb(10, 082, 216);
+    color: white;
+}
+
+.btn.btn-facebook:hover{
+    background-color: rgb(17, 57, 133);
+    color: white;
+}
+
+.btn.btn-google{
+    background-color: rgb(104, 100, 100);
+    color: white;
+    border: solid 1px #ccc;
+}
+
+.btn.btn-google:hover{
+    background-color: #8d8787;
+    color: white;
+    border: solid 1px #ccc;
+}
+
+.btn.btn-twitter{
+    background-color: rgb(10, 168, 216);
+    color: white;
+}
+
+.btn.btn-twitter:hover{
+    background-color: #0a5268;
+    color: white;
+}
+
+.form-container .welcome-screen-container{
+    background-color: #2F58CD;
+    color: white;
+    width: 50%;
+    height: 100%;
+}
+
+/* Ayuda para que no se rompa la pagina al momento de hacerlo mas chico*/
+@media screen and (max-width: 1357px){ 
+    .form-container{
+        width: 95%;
+    }
+
+    .form-container .login-container{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .form-container .welcome-screen-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .form-container {
+        height: 70%;
+    }
+    
+    .form-container .login-container{
+        width: 350px;
+    }
+    
+    .form-container .welcome-screen-container{
+        display: none;
+    }
+}

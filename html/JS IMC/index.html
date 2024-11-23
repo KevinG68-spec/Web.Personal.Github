@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> <!-- La clase contenedora-->
+        <h1>Calcular IMC</h1>
+        <form id="imcForm"><!--El form funciona para decir que lo que viene es un formulario que se necesita ingresar datos-->
+            <label for="peso">Ingresa tu peso en KG:</label> <!-- Conecta el texto de una etiqueta con su campo de entrada correspondiente, mejorando la accesibilidad.-->
+            <input type="number" id="peso" name="peso" step="0.1" min="1"  required><br> <!--Input es para que el usuario ingrese la información-->
+            <!--id hace que este correcto la vinculacion del for peso con el input-->
+            <!-- type es para el tipo de dato --><!--step para limitar cuantos decimales puede poner  -->
+             <!-- required es para que salte un mensaje que diga que es obligatorio poner los datos -->
+            <!--El min funcina para poner el minimo necesario de valor para que el programa funciona-->
+
+            <label for="altura">Ingresa tu altura en cm:</label>
+            <input type="number" id="altura" name="altura" step="0.1" min="1" max="251" required><br>
+
+            <button type="submit">Calcular</button> <!-- Esto crea un boton -->
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Esto de aqui es necesario para poder vincular el archivo JS -->
+    <!-- Se pone dentro src= el nombre del JS paara poder llamarlo al html -->
+</body>
+</html>

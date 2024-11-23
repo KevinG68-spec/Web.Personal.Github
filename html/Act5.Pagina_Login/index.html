@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Aqui estara todo el contenedor de la pagina web -->
+    <div class="form-container">
+
+        <!-- Clase para logearse -->
+        <div class="login-container">
+            <h2>Bienvenido</h2>
+            <p>Selecciona el método de Autenticación</p>
+
+            <!-- Clase para el formulario y capturar la información -->
+            <form action="">
+                <p>
+                    <label for="Username">Nombre de Usuario</label>
+                    <input class="input" type="text" name="username" id="username"/>
+                </p>
+
+                <p>
+                    <label for="password">Contraseña</label>
+                    <input class="input" type="text" name="password" id="password"/>
+                </p>
+
+                <div class="options">
+                    <div>
+                        Remember me <input type="checkbox" name="rememberme"/>
+                    </div>
+                    <div>
+                        <a href="#">Olvide mi Contraseña</a> <!-- el # es para un hipervinculo -->
+                    </div>
+                </div>
+
+                <p>
+                    <input type="submit" class="btn btn-login" value="Log in"/>
+                </p>
+
+                <div class="provides">
+                    <span> Elige otro metodo de Autenticación</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>
+                    <button class="btn btn-Twitter">Twitter</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Para decorar -->
+        <div class="welcome-screen-container">
+            <p>
+                <hr>
+Kevin Daniel Gallegos Carrillo, ICOM <br>
+Programación para Internet. <br>
+Actividad 1 CSS. Menu Horizontal.
+            </p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

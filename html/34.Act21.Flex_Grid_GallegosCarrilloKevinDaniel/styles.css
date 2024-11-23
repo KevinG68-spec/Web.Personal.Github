@@ -1,0 +1,331 @@
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+    padding: 0%;
+    background-color: #270c4f;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Flexbox Examples */
+.flexbox-examples div {
+    border: 1px solid #3795BD;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    background-color: #3A1078;
+}
+
+/*-----Primer Flex box----- */
+/* Flex Example 1: Simple Row */
+.flex-example-1  {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+.flex-example-1 div:nth-child(1){
+    background-color: #1c0;
+}
+
+.flex-example-1 div:nth-child(2){
+    background-color: #183b;;
+}
+.flex-example-1 div:nth-child(3){
+    background-color: #83b;;
+}
+/*----Fin del primer flexbox----- */
+
+
+/* Flex Example 2: Column Layout */
+.flex-example-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-example-2 div:nth-child(1){
+    background-color: #0f4bf0;
+}
+
+.flex-example-2 div:nth-child(2){
+    background-color: #dbd810;
+}
+
+/* Fin del ejemplo de flex 2*/
+
+/* Flex Example 3: Flex Wrap */
+.flex-example-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-example-3 div:nth-child(1){
+    background-color: #0ef8ec;
+}
+.flex-example-3 div:nth-child(2){
+    background-color: #e72019;
+}
+
+.flex-example-3 div:nth-child(3),.flex-example-3 div:nth-child(4){
+    background-color: #eaee0386;
+}
+
+/*Fin del flex 4 */
+
+/* Flex Example 4: Align Items Center */
+.flex-example-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #e0e0e0;
+}
+
+.flex-example-4 div:nth-child(1),.flex-example-4 div:nth-child(2),.flex-example-4 div:nth-child(3),.flex-example-4 div:nth-child(4){
+    background-color: #fc790f;
+}
+
+
+/*Fin del Flex 4 */
+
+
+/* Flex Example 5: Align Self */
+.flex-example-5 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
+.flex-example-5 div:first-child {
+    align-self: flex-start;
+}
+.flex-example-5 div:last-child {
+    align-self: flex-end;
+}
+
+.flex-example-5 div:nth-child(1),.flex-example-5 div:nth-child(2){
+    background-color: #5a0ad1;
+}
+
+
+/* Flex Example 6: Space Around */
+.flex-example-6 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-example-6 div:nth-child(1),.flex-example-6 div:nth-child(2),.flex-example-6 :nth-child(3){
+    background-color: #dceb09;
+}
+
+/* Flex Example 7: Flex Grow */
+.flex-example-7 {
+    display: flex;
+}
+.flex-example-7 div {
+    flex-grow: 1;
+}
+
+.flex-example-7 :nth-child(1), .flex-example-7 :nth-child(2), .flex-example-7 :nth-child(3){
+    background-color: #ff0000;
+}
+
+/* Flex Example 8: Flex Shrink */
+.flex-example-8 {
+    display: flex;
+}
+.flex-example-8 div {
+    flex-shrink: 1;
+    width: 200px;
+}
+
+.flex-example-8 :nth-child(1), .flex-example-8 :nth-child(2), .flex-example-8 :nth-child(3){
+    background-color: #083b08;
+}
+
+/* Flex Example 9: Flex Basis */
+.flex-example-9 {
+    display: flex;
+}
+.flex-example-9 div {
+    flex-basis: 200px;
+}
+
+.flex-example-9 :nth-child(1), .flex-example-9 :nth-child(2){
+    background-color: #10cfff;
+}
+
+/* Flex Example 10: Nested Flex */
+.flex-example-10 {
+    display: flex;
+    justify-content: space-between;
+}
+.nested-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-example-10 :nth-child(1), .flex-example-10 :nth-child(2),
+.nested-flex :nth-child(3){
+    background-color: #837f88;
+}
+
+
+/* Grid Examples */
+.grid-examples div {
+    border: 1px solid #0be78c ;
+    margin: 10px;
+    padding: 20px;
+    background-color: #224196;
+}
+
+/* Grid Example 1: Simple Grid */
+.grid-example-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-example-1 :nth-child(1), .grid-example-1 :nth-child(2), .grid-example-1 :nth-child(3){
+    background-color: #df35c2;
+}
+
+/* Grid Example 2: Custom Column Widths */
+.grid-example-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 10px;
+}
+.grid-example-2 :nth-child(1), .grid-example-2 :nth-child(2), .grid-example-2 :nth-child(3), .grid-example-2 :nth-child(4){
+    background-color: #15c933;
+}
+
+
+/* Grid Example 3: Grid with Two Columns */
+.grid-example-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.grid-example-3 :nth-child(1), .grid-example-3 :nth-child(2){
+    background-color: #8f9e0c;
+}
+
+/* Grid Example 4: Grid with Row and Column Gaps */ 
+.grid-example-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 40px;
+}
+
+.grid-example-4 :nth-child(1), .grid-example-4 :nth-child(2), .grid-example-4 :nth-child(3){
+    background-color: #17cc3e3b;
+}
+
+/* Grid Example 5: Grid Area */
+.grid-example-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "item1 item2"
+        "item1 item2";
+}
+.grid-example-5 div:first-child {
+    grid-area: item1;
+}
+.grid-example-5 div:last-child {
+    grid-area: item2;
+}
+
+.grid-example-5 :nth-child(1), .grid-example-5 :nth-child(2){
+    background-color: #af340e;
+}
+
+
+
+
+
+/* Grid Example 6: Grid with Auto Columns */
+.grid-example-6 {
+    display: grid;
+    grid-auto-columns: 700px;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+}
+
+.grid-example-6 :nth-child(1), .grid-example-6 :nth-child(2), .grid-example-6 :nth-child(3), .grid-example-6 :nth-child(4){
+    background-color: #96b40c;
+}
+
+/* Grid Example 7: Grid with Auto Rows */
+.grid-example-7 {
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-example-7 :nth-child(1), .grid-example-7 :nth-child(2), .grid-example-7 :nth-child(3), .grid-example-7 :nth-child(4), .grid-example-7 :nth-child(4){
+    background-color: #24ce24;
+}
+
+/* Grid Example 8: Grid with Named Lines */
+.grid-example-8 {
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-middle] 1fr [col-end];
+    gap: 10px;
+}
+
+.grid-example-8 :nth-child(1), .grid-example-8 :nth-child(2), .grid-example-8 :nth-child(3){
+    background-color: #2352df;
+}
+
+/* Grid Example 9: Grid with Minmax */
+.grid-example-9 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.grid-example-9 :nth-child(1), .grid-example-9 :nth-child(2), .grid-example-9 :nth-child(3), .grid-example-9 :nth-child(4){
+    background-color: #19317a;
+}
+
+/* Grid Example 10: Grid with Template Rows and Columns */
+.grid-example-10 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100px 200px;
+    gap: 15px;
+}
+
+.grid-example-10 div:nth-child(1), .grid-example-10 :nth-child(2), .grid-example-10 :nth-child(3){
+    background-color: #add10b;
+}
+
+
+
